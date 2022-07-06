@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Website</title>
+    <link rel="stylesheet" href="/hotel.css">
+    <script src="https://kit.fontawesome.com/799a51071e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <header>
+        <section class="video-wrapper">
+            <video playsinline autoplay muted loop>
+                <source src="/Video Background/pexels-chris-norberg-8336610.mp4" type="video/webm">
+                Your browser does not support the video tag.
+              </video>
+              <section class="text-area">
+                <h3 class="logo">AFRICAN HOTELS</h3>
+                <h1>The Best Hotels In Africa.</h1>
+                <br>
+                <a class="btn" onclick="show()" href="#main" id="btn-jumpIn">
+                    DIVE IN
+                </a>
+           </section>
+        </section>
+      
+    </header>
+    
+    <section class="main" id="main">
+        <section class="about-us">
+            <div class="row">
+                <img src="/Images/edvin-johansson-rlwE8f8anOc-unsplash.jpg" alt="hotel">
+                <div class="text">
+                    <h1>Best Views.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <br>
+                    <button class="btn">TAKE A LOOK</button>
+                </div>
+            </div>
+            <div class="row reverse">
+                <video src="/Video Background/Elevators Going Up And Down.mp4" autoplay loop></video>
+                <div class="text">
+                    <h1>Enjoy Absolute Luxury.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <br>
+                    <button class="btn">EXPLORE MORE</button>
+                </div>
+            </div>
+            <div class="row">
+                <img src="/Images/manuel-moreno-DGa0LQ0yDPc-unsplash.jpg" alt="">
+                <div class="text">
+                    <h1>Quality Services.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <br>
+                    <button class="btn">LEARN MORE</button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Nana Kwasi Asante.</p>
+        </footer>
+    </section>
+</body>
+<script>
+    function show(){
+        document.getElementById('main').classList.toggle("showOpacity")
+    }
+</script>
+</html>

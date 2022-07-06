@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  border: 0;
+  outline: 0;
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+}
+header .video-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .video-wrapper video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header .video-wrapper .text-area {
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.7);
+}
+header .video-wrapper .text-area h3 {
+  letter-spacing: 0.5em;
+}
+header .video-wrapper .text-area h1 {
+  font-size: 3em;
+}
+
+.main {
+  display: none;
+  background-color: rgb(31, 30, 30);
+  color: white;
+  width: 100vw;
+  padding: 1.5em 0em;
+  padding-bottom: 0;
+}
+.main .about-us .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+}
+.main .about-us .row img, .main .about-us .row video {
+  width: 40vw;
+}
+.main .about-us .row img:hover, .main .about-us .row video:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+.main .about-us .row .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.main .about-us .row .text h1 {
+  font-size: 3em;
+}
+.main .about-us .reverse {
+  flex-direction: row-reverse;
+}
+.main footer {
+  text-align: center;
+  background-color: white;
+  color: black;
+  padding: 1em;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid white;
+  font-size: 1.5em;
+  padding: 0.5em 1em;
+  color: white;
+}
+.btn:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+  background-color: rgba(0, 255, 255, 0.3);
+}
+
+.showOpacity {
+  display: block;
+  transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  header .video-wrapper .text-area h1 {
+    font-size: 2em;
+  }
+
+  .main .about-us .row {
+    padding: 1em 0.6em;
+    gap: 1em;
+  }
+  .main .about-us .row .text h1 {
+    font-size: 1.5em;
+  }
+  .main .about-us .row .text .btn {
+    font-size: 0.7em;
+  }
+}/*# sourceMappingURL=hotel.css.map */
